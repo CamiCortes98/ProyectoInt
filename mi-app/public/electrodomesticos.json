@@ -1,0 +1,144 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "Heladera No Frost",
+      "price": 60435,
+      "discountPercentage": 58.47,
+      "thumbnail": "/src/assets/products/product_01.png"
+    },
+    {
+      "id": 2,
+      "title": "Lavarropas automático",
+      "price": 433427,
+      "discountPercentage": 24.57,
+      "thumbnail": "/src/assets/products/product_02.png"
+    },
+    {
+      "id": 3,
+      "title": "Cocina a gas",
+      "price": 598093,
+      "discountPercentage": 17.04,
+      "thumbnail": "/src/assets/products/product_03.png"
+    },
+    {
+      "id": 4,
+      "title": "Microondas",
+      "price": 598900,
+      "discountPercentage": 20.22,
+      "thumbnail": "/src/assets/products/product_04.png"
+    },
+    {
+      "id": 5,
+      "title": "Lavaplatos",
+      "price": 500187,
+      "discountPercentage": 27.89,
+      "thumbnail": "/src/assets/products/product_05.png"
+    },
+    {
+      "id": 6,
+      "title": "Lavarropas automático",
+      "price": 543417,
+      "discountPercentage": 27.02,
+      "thumbnail": "/src/assets/products/product_06.png"
+    },
+    {
+      "id": 7,
+      "title": "Licuadora",
+      "price": 404768,
+      "discountPercentage": 42.48,
+      "thumbnail": "/src/assets/products/product_07.png"
+    },
+    {
+      "id": 8,
+      "title": "Planchita de pelo",
+      "price": 116404,
+      "discountPercentage": 21.08,
+      "thumbnail": "/src/assets/products/product_08.png"
+    },
+    {
+      "id": 9,
+      "title": "Batidora de pie",
+      "price": 706119,
+      "discountPercentage": 19.66,
+      "thumbnail": "/src/assets/products/product_09.png"
+    },
+    {
+      "id": 10,
+      "title": "Electroconvector",
+      "price": 607512,
+      "discountPercentage": 18.03,
+      "thumbnail": "/src/assets/products/product_10.png"
+    },
+    {
+      "id": 11,
+      "title": "Rasuradora eléctrica",
+      "price": 731198,
+      "discountPercentage": 21.57,
+      "thumbnail": "/src/assets/products/product_11.png"
+    },
+    {
+      "id": 12,
+      "title": "Tostadora",
+      "price": 266015,
+      "discountPercentage": 5.09,
+      "thumbnail": "/src/assets/products/product_12.png"
+    },
+    {
+      "id": 13,
+      "title": "Pava eléctrica",
+      "price": 276855,
+      "discountPercentage": 46.46,
+      "thumbnail": "/src/assets/products/product_13.png"
+    },
+    {
+      "id": 14,
+      "title": "Cafetera",
+      "price": 351673,
+      "discountPercentage": 15.53,
+      "thumbnail": "/src/assets/products/product_14.png"
+    },
+    {
+      "id": 15,
+      "title": "Exprimidora",
+      "price": 833847,
+      "discountPercentage": 12.67,
+      "thumbnail": "/src/assets/products/product_15.png"
+    },
+    {
+      "id": 16,
+      "title": "Ventilador de pie",
+      "price": 227716,
+      "discountPercentage": 26.78,
+      "thumbnail": "/src/assets/products/product_16.png"
+    },
+    {
+      "id": 17,
+      "title": "Horno de pared",
+      "price": 239304,
+      "discountPercentage": 21.04,
+      "thumbnail": "/src/assets/products/product_17.png"
+    },
+    {
+      "id": 18,
+      "title": "Cocina electrica",
+      "price": 264631,
+      "discountPercentage": 14.08,
+      "thumbnail": "/src/assets/products/product_18.png"
+    },
+    {
+      "id": 19,
+      "title": "Heladera",
+      "price": 113810,
+      "discountPercentage": 11.0,
+      "thumbnail": "/src/assets/products/product_19.png"
+    },
+    {
+      "id": 20,
+      "title": "Freidora de aire",
+      "price": 72550,
+      "discountPercentage": 30.44,
+      "thumbnail": "/src/assets/products/product_20.png"
+    }
+  ]
+}

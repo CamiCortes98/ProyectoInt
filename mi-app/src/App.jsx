@@ -1,43 +1,57 @@
-import React from 'react';
-import Ej1 from './ejercicios/ejercicio1';
-import Ej2 from './ejercicios/ejercicio2';
-import Ej3 from './ejercicios/ejercicio3';
-import Ej6 from './ejercicios/ejercicio6';
-import Saludo from './components/Saludo';
-import Presentacion from './components/Presentacion';
-import BotonTailwind from './components/BotonTailwind';
-import Hero from './components/Hero';
+import { useEffect, useState } from "react";
+import axios from "axios";
+import Navbar from "./components/Navbar";
+import SidebarFilters from "./components/SidebarFilters";
+import ProductList from "./components/ProductList";
+import StatsPanel from "./components/StatsPanel";
+import "./App.css";
 
-const App = () => (
-  <div className="p-8 space-y-8">
-    <section>
-      <h2 className="text-2xl font-bold">Actividad 1–3 (JS puro)</h2>
-      <Ej1 />
-      <Ej2 />
-      <Ej3 />
-    </section>
+function App() {
+  const [products, setProducts] = useState([]);
+  const [search, setSearch] = useState("");
+  const [selectedKeywords, setSelectedKeywords] = useState([]);
 
-    <section>
-      <h2 className="text-2xl font-bold">Actividad 4 (React Props)</h2>
-      <Saludo nombre="Martín" />
-      <Presentacion nombre="María" edad={30} profesion="Ingeniera" />
-    </section>
+  useEffect(() => {
+    axios.get("/electrodomesticos.json").then((res) => {
+      setProducts(res.data.products);
+    });
+  }, []);
 
-    <section>
-      <h2 className="text-2xl font-bold">Actividad 5 (Botón Tailwind)</h2>
-      <BotonTailwind />
-    </section>
+  const toggleKeyword = (keyword) => {
+    setSelectedKeywords((prev) =>
+      prev.includes(keyword)
+        ? prev.filter((k) => k !== keyword)
+        : [...prev, keyword]
+    );
+  };
 
-    <section>
-      <h2 className="text-2xl font-bold">Actividad 6 (Array methods)</h2>
-      <Ej6 />
-    </section>
+  const filteredProducts = products.filter((p) => {
+    const title = p.title.toLowerCase();
+    const matchesSearch = title.includes(search.toLowerCase());
+    const matchesKeyword =
+      selectedKeywords.length === 0 ||
+      selectedKeywords.some((kw) => title.includes(kw));
+    return matchesSearch && matchesKeyword;
+  });
 
-    <section>
-      <h2 className="text-2xl font-bold">Actividad 7 (Tailblocks Hero)</h2>
-      <Hero />
-    </section>
-  </div>
-);
+  return (
+    <div className="min-h-screen bg-gray-50 text-gray-900 p-4">
+      <Navbar search={search} setSearch={setSearch} />
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+        <div className="md:col-span-1">
+          <SidebarFilters
+            products={products}
+            selectedKeywords={selectedKeywords}
+            toggleKeyword={toggleKeyword}
+          />
+        </div>
+        <div className="md:col-span-3 space-y-6">
+          <StatsPanel products={filteredProducts} />
+          <ProductList products={filteredProducts} />
+        </div>
+      </div>
+    </div>
+  );
+}
 
 export default App;

@@ -20,12 +20,24 @@ function App() {
   const [msg, setMsg] = useState(null);
   const perPage = 20;
 
-  useEffect(() => {
-    axios
-      .get("electrodomesticos.json")
-      .then((res) => setProducts(res.data.products))
-      .catch((err) => console.error("Error fetching products:", err));
-  }, []);
+useEffect(() => {
+  axios
+    .get("https://dummyjson.com/products?limit=100")
+    .then((res) => {
+      const fullProducts = res.data.products.map(p => ({
+        id:                  p.id,
+        title:               p.title,
+        category:            p.category,
+        price:               p.price,
+        stock:               p.stock,
+        rating:              p.rating,
+        thumbnail:           p.thumbnail,
+        discountPercentage:  p.discountPercentage,
+      }));
+      setProducts(fullProducts);
+    })
+    .catch((err) => console.error("Error fetching products:", err));
+}, []);
 
   const toggleKeyword = (keyword) => {
     setSelectedKeywords((prev) =>

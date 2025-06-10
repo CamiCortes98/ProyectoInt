@@ -15,3 +15,5 @@ export function SortSelect({ value, onChange }) {
     </select>
   );
 }
+
+export default SortSelect;

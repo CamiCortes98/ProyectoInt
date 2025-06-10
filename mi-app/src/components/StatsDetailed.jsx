@@ -100,3 +100,5 @@ export function StatsDetailed({ items }) {
     </div>
   );
 }
+
+export default StatsDetailed;

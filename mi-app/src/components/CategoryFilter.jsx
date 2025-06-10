@@ -14,3 +14,5 @@ export function CategoryFilter({ categories, value, onChange }) {
     </select>
   );
 }
+
+export default CategoryFilter;

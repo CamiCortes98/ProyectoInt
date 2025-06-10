@@ -20,3 +20,5 @@ export function Pagination({ pageCount, currentPage, onPageChange }) {
     </div>
   );
 }
+
+export default Pagination;

@@ -50,3 +50,5 @@ export function Charts({ items }) {
     </div>
   );
 }
+
+export default Charts;

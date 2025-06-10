@@ -9,3 +9,5 @@ export function ProductItem({ product }) {
     </div>
   )
 }
+
+export default ProductItem;

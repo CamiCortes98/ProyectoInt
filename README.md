@@ -1,14 +1,14 @@
-##Proyecto Int
+## Proyecto Int
 
 Autor: Camila Cortés
 
-##Descripción
+## Descripción
 
 
 Se desarrolló una aplicación web como parte de la carrera de Tecnicatura en cs. de datos e IA. 
 Está diseñada para gestionar y explorar un catálogo de electrodomésticos con una interfaz intuitiva y moderna. La misma integra React, Vite, Node.js y Tailwind CSS, ofreciendo funcionalidades de búsqueda, filtrado, estadísticas y visualizaciones interactivas.
 
-##Funcionalidades principales
+## Funcionalidades principales
 
 - Carga de datos: Importa productos desde un archivo JSON (electrodomesticos.json).
 
@@ -32,7 +32,7 @@ Está diseñada para gestionar y explorar un catálogo de electrodomésticos con
 
 - Diseño responsivo: Adaptación perfecta a diferentes tamaños de pantalla (móvil, tablet y escritorio).
 
-##Tecnologías y librerías
+## Tecnologías y librerías
 
 - Front‑end: React, Vite, Tailwind CSS
 
@@ -44,7 +44,7 @@ Está diseñada para gestionar y explorar un catálogo de electrodomésticos con
 
 - Control de versiones: Git y GitHub
 
-##Instalación y puesta en marcha
+## Instalación y puesta en marcha
 
 - Clonar el repositorio:
 
@@ -66,7 +66,7 @@ npm run dev
 
 http://localhost:5173
 
-##Uso de la aplicación
+## Uso de la aplicación
 
 - Buscar: Escribe en el campo superior para filtrar productos.
 

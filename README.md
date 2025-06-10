@@ -1,4 +1,4 @@
-## Proyecto Int
+## ElectroStore
 
 Autor: Camila Cortés
 
